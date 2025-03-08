@@ -16,10 +16,12 @@ Add a passphrase that is easy to remember (but not overly simple) , store this i
 This will generate a keypair , one for you to keep (private key) and the other for you to post to your GitHub account (public key)
 
   
-I would recommend storing these keys inside of a password manager like Bitwarden,
+
+Also store these inside of a password manager 
 
  
-Your public and private key will be stored in the file that is shown in the output , after entering the above comment:
+Your public and private key will be stored in the file that is shown in the output , after entering the above command, by default it will output to:
+
 
   
 
@@ -27,7 +29,6 @@ Your public and private key will be stored in the file that is shown in the outp
 
   
 
-- Here you will have your public and private key
 
 
 Go to GitHub account: *Settings* → *SSH and GPG Keys* → *New SSH key*
