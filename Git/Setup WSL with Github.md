@@ -10,19 +10,16 @@ ssh-keygen -t {encryption, e.g. rsa} -b {bits, e.g.4096} -C {comment, email of g
 
   
 
-##### Add a passphrase that is easy to remember (but not overly simple) , store this in your favorite
+Add a passphrase that is easy to remember (but not overly simple) , store this in your favorite password manager
 
   
-
-##### This will generate a keypair , one for you to keep (private key) and the other for you to post to your GitHub account (public key)
-
-  
-
-##### I would recommend storing these keys inside of a password manager like Bitwarden,
+This will generate a keypair , one for you to keep (private key) and the other for you to post to your GitHub account (public key)
 
   
+I would recommend storing these keys inside of a password manager like Bitwarden,
 
-##### Your public and private key will be stored in the file that is shown in the output , after entering the above comment:
+ 
+Your public and private key will be stored in the file that is shown in the output , after entering the above comment:
 
   
 
@@ -32,33 +29,28 @@ ssh-keygen -t {encryption, e.g. rsa} -b {bits, e.g.4096} -C {comment, email of g
 
 - Here you will have your public and private key
 
-  
 
-##### Go to GitHub account: *Settings* → *SSH and GPG Keys* → *New SSH key*
-
-  
-
-##### Title = WSL
+Go to GitHub account: *Settings* → *SSH and GPG Keys* → *New SSH key*
 
   
+Title = WSL
 
-##### Key type = *Authentication Key*
+  
+Key type = *Authentication Key*
 
   
 
-##### Key = *paste your public key here*
+Key = *paste your public key here*
 
   
 
-##### Enter your GitHub password if prompted
+Enter your GitHub password if prompted
 
   
-
-##### The key has been added
+The key has been added
 
   
-
-##### Now you can go back to your WSL terminal and enter :
+Now you can go back to your WSL terminal and enter :
 
   
 
@@ -82,7 +74,7 @@ ssh -T git@github.com
 
   
 
-##### Configure Git with your identity
+Configure Git with your identity
 
   
 
@@ -98,7 +90,7 @@ git config --global user.mail "emailaddress@gmail.com"
 
   
 
-##### Create a folder for projects on user’s home directory
+Create a folder for projects on user’s home directory
 
   
 
@@ -114,7 +106,7 @@ mkdir ~/git
 
   
 
-##### You can move into this directory , from this point, you can now clone your and other's repositories into your newly created folder, obviously if you named it differently replace it in this next command, what follows the `clone` keyword you will find in the <>code button then SSH dropdown on the repository you want to copy :
+You can move into this directory , from this point, you can now clone your and other's repositories into your newly created folder, obviously if you named it differently replace it in this next command, what follows the `clone` keyword you will find in the <>code button then SSH dropdown on the repository you want to copy :
 
   
   
@@ -128,13 +120,12 @@ git clone git@github.com:m4rci3/somethingsomethingrepository
 ```
 
   
-
-##### You will need to enter the passphrase for your SSH keypair
-
-  
-
-##### When you go into the newly cloned git repo , you can see all the files and folder inside of that repo , if you want to
+You will need to enter the passphrase for your SSH keypair
 
   
 
-##### Make sure to run the following to ensure your “local branch” is up to date
+When you go into the newly cloned git repo , you can see all the files and folder inside of that repo , if you want to
+
+  
+
+Make sure to run the following to ensure your “local branch” is up to date
