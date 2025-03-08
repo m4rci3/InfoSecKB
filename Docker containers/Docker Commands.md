@@ -12,6 +12,7 @@ docker search {image name}
 
 #Pull an image from Docker Hub
 docker pull {e.g.ngnix} {version e.g. 1.23}
+#if version is not specified, will default to the latest version of the image 
 ```
 
 # Image Commands
