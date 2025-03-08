@@ -63,15 +63,15 @@ ssh -T git@github.com
 
   
 
-##### you will be prompted for the passphrase of your keypair
+you will be prompted for the passphrase of your keypair
 
   
 
-##### Now this will permanently add [github.com](http://github.com)  to the list of known_hosts , this can be found inside of this file directory:
+Now this will permanently add [github.com](http://github.com)  to the list of known_hosts , this can be found inside of this file directory:
 
   
 
-##### `“/home/username/.ssh/known_hosts”` , there will also be a `known_hosts.old` file created, you can delete this if you want. This is also the place where you would confirm if the “host” you added was in fact the entity you want to add, this has the entities public key for you to use to confirm it is really them.
+`“/home/username/.ssh/known_hosts”` , there will also be a `known_hosts.old` file created, you can delete this if you want. This is also the place where you would confirm if the “host” you added was in fact the entity you want to add, this has the entities public key for you to use to confirm it is really them.
 
   
 
