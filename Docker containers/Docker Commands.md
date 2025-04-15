@@ -1,58 +1,89 @@
-# Docker Hub
+# Manage Images / Docker Hub
 
 ```bash
-#Login into Docker
+#Login to Docker account
 docker login -u {username}
 
-#Publish an image to Docker Hub
-docker push {username}/{image name}
-
-#Search Hub for an image 
-docker search {image name}
-
-#Pull an image from Docker Hub
-docker pull {e.g.ngnix} {version e.g. 1.23}
-#if version is not specified, will default to the latest version of the image 
-```
-
-# Image Commands
-
-```bash
-#Build an image from a Dockerfile(image)
-docker built -t {image name}
-
-#List all docker images (Repo, TAG, Image ID, Creation date, Size)
-docker images
+#Publish an image to a repository (public/private)
+docker push {image:tag}
 
 #Delete an image
-docker rmi {image name}
+docker rmi {image:tag}
 
+#Show a list of all images
+docker images
+
+#Search docker hub for images
+docker search {image}
+
+#Build an image from a Dockerfile
+docker build -t {dockerfile path}
 ```
 
-# Interact with containers
+# Container Management
 
 ```bash
-#Run the docker container in the foreground
-docker run {name}:{tag} 
-
-#Run the docker container interactivley (command line)
-docker run -it {name}:{tag}
-
-#Run docker container in the background/ detatched
-docker run -d {name}:{tag}
-
-#Stop a docker container
-docker stop {docker name or container name}
-
-#Show running Docker containers 
+#See current running docker containers 
 docker ps 
 
-#Show stopped Docker containers
-docker ps -a 
+#See all (including shutdown) docker containers 
+docker ps -a
 
-#Open a shell inside an already running container
-docker exec -it {container name} sh
+#Delete a running container
+docker rm {container-name or ID}
 
-#Run a container with and publish a container's ports to the host
-docker run -p {host port}:{container port} {image name}
+#Delete stopped containers 
+docker container prune 
+
+#Stop a running container 
+docker stop {contiainer-name or ID}
+
+#Start a stopped container 
+docker start {container-name or ID}
+
+#Copy a file from a container to the host
+docker cp {target container:/path}
+
+#Start a shell inside a running container
+docker exec -it {container-name or ID}
+
+#Rename a container
+docker rename {old-name} {new-name}
+
+#Pause a container
+docker pause {container-name or ID}
+
+#
+```
+
+# Run a new container
+
+```bash
+#Start a new container from an image
+docker run {image}
+
+#assign it a name 
+docker run --name {name} {image}
+
+#port mapping
+docker run -p {hostport}:{containerport} {image}
+
+#Start container in the background
+docker run -d {image}
+
+#Assign a hostname 
+docker run --hostname {hostname} {image}
+
+#Assign a specific docker network
+docker run --network={network-name} {image}
+```
+
+# Docker Networking
+
+```bash
+#Creation of a user-defined network  with specified subnet, gateway and name
+sudo docker network create -d {network-type e.g. bridge} {name} --subnet={subnet} --gateway={gateway}  
+
+#Show all details of docker networks (and their connected containers)
+docker inspect network {network name or type e.g driver}
 ```
