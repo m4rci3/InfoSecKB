@@ -1,4 +1,4 @@
-# Do this if you want to push any commits to your own repos from the command line, or if you like to maintain other peoples repositories locally (if you have permissions) :
+### Do this if you want to push any commits to your own repos from the command line, or if you like to maintain other peoples repositories locally (if you have permissions) :
 
   
 
