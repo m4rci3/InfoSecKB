@@ -1,4 +1,4 @@
-# Do this if you want to push any commits to your own repos from the command line, or if you like to maintain other peoples repositories locally :
+# Do this if you want to push any commits to your own repos from the command line, or if you like to maintain other peoples repositories locally (if you have permissions) :
 
   
 
@@ -15,9 +15,6 @@ Add a passphrase that is easy to remember (but not overly simple) , store this i
   
 This will generate a keypair , one for you to keep (private key) and the other for you to post to your GitHub account (public key)
 
-  
-
-Also store these inside of a password manager 
 
  
 Your public and private key will be stored in the file that is shown in the output , after entering the above command, by default it will output to:
@@ -27,14 +24,14 @@ Your public and private key will be stored in the file that is shown in the outp
 
 `‘/home/username/.ssh’`
 
-  
 
 
+--------------------  
 
 Go to GitHub account: *Settings* → *SSH and GPG Keys* → *New SSH key*
 
   
-Title = WSL
+Title = Something descriptive of what device the key belongs (Like Macbook, or T480)
 
   
 Key type = *Authentication Key*
@@ -50,6 +47,7 @@ Enter your GitHub password if prompted
   
 The key has been added
 
+--------------------
   
 Now you can go back to your WSL terminal and enter :
 
@@ -73,7 +71,8 @@ Now this will permanently add [github.com](http://github.com)  to the list of k
 
 `“/home/username/.ssh/known_hosts”` , there will also be a `known_hosts.old` file created, you can delete this if you want. This is also the place where you would confirm if the “host” you added was in fact the entity you want to add, this has the entities public key for you to use to confirm it is really them.
 
-  
+
+--------------------
 
 Configure Git with your identity
 
@@ -89,7 +88,8 @@ git config --global user.mail "emailaddress@gmail.com"
 
 ```
 
-  
+
+--------------------
 
 Create a folder for projects on user’s home directory
 
@@ -107,7 +107,7 @@ mkdir ~/git
 
   
 
-You can move into this directory , from this point, you can now clone your and other's repositories into your newly created folder, obviously if you named it differently replace it in this next command, what follows the `clone` keyword you will find in the <>code button then SSH dropdown on the repository you want to copy :
+You can move into this directory , from this point, you can now clone your and other's repositories into your newly created folder, obviously if you named it differently replace it in this next command, what follows the `clone` keyword you will find in the `<>code` button then SSH dropdown on the GitHub repository you want to copy :
 
   
   
@@ -125,8 +125,7 @@ You will need to enter the passphrase for your SSH keypair
 
   
 
-When you go into the newly cloned git repo , you can see all the files and folder inside of that repo , if you want to
+When you go into the newly cloned git repo , you can see all the files and folder inside of that repo.
 
+To make edits and updates that can be seen on Github, see `Git Commands.md` and other such resources 
   
-
-Make sure to run the following to ensure your “local branch” is up to date
