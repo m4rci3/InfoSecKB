@@ -9,4 +9,5 @@ More details and information can be found in the references section:
 ---
 ### References
 https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm
+
 https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms
