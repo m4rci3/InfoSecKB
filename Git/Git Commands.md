@@ -1,13 +1,15 @@
 ### Make a directory a Git repository 
 
 ```bash
-git init . #turns the current working directory into a Git repository
+git init . 
+#Turns the current working directory into a Git repository
 ```
 
 ### Make specific files to be ignored 
 
 ```bash
 vim {or nano} .gitignore
+# Place this in the branch's repo, all you need to do is list the file's name in the file. 
 ```
 
 ### See what files have been modified, added or deleted since the last commit.
@@ -28,7 +30,7 @@ git branch
 git checkout {branchname}
 ```
 
-### See the logs of any commits :
+### See the logs of any commits:
 
 ```bash
 git log 
@@ -40,29 +42,49 @@ git log
 git diff
 ```
 
-### Stage changes for commit. It tells Git to include your modified or new files in the next commit. Adding your changes to a list of updates you want to save permanently
+### Stage changes for commit. Telling Git to include your modified or new files in the next commit. Adding your changes to a list of updates you want to save permanently
 
 ```bash
-git add {name of modified file} # for a specific file that you want to update 
-git add .# makes changes to all of the files within the branch 
+git add {name of modified file}
 
-#git stage is an alias for the above hand
+#For a specific file that you want to update 
+git add .# makes changes to all of the files within the branch 
+#git stage is an alias for the above commands
 ```
 
 ### Unstage / unadd  
 
 ```bash
-git restore --staged {file}
+git restore --staged {file} 
+# Or . (representing the current working directory/branch)
 ```
+
+### Delete a *local* branch
+```bash
+git branch -d <branch>
+# Only deletes the branch if it has already been fully merged in its upstream branch 
+
+git branch -D <branch> 
+# Alias for --delete --force, which deletes the branch irrespective of its merged states 
+```
+
+### Delete a remote branch
+```bash
+git push -d <remote name> <branch name>
+```
+
 
 ### Commit the changes
 
 ```bash
-git commit -m "here you should add a description of any of the changes you made , it is very good to be verbose on all of the changes you did and what they did" 
+git commit -m "Short summary here, becomes the commits title" -m "More detailed explanation of the changes. This section gives greater clarity for those reading the history of the repo. Adds to the body of the commit message. "
+
+
 ```
 
-### Finally push the changes made to the GitHub repository: 
+### Push the changes made to the GitHub repository: 
 
 ```bash
-git push
+git push 
 ```
+
