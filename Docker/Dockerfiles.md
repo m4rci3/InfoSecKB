@@ -1,4 +1,4 @@
-A Dockerfile is a text file containing instructions for building [Docker Images](https://www.notion.so/Docker-Images-1ad6d1ece39a803895a0ea1404c16d13?pvs=21) specifying the commands to run, files to copy, and other configuration details needed to create a containerized application
+A Dockerfile is a text file containing instructions for building [Docker Images](https://github.com/m4rci3/InfoSecKB/blob/main/Docker/Docker%20Images.md) specifying the commands to run, files to copy, and other configuration details needed to create a containerized application
 
 When creating a docker file name it `Dockerfile` 
 
