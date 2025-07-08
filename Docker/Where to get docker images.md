@@ -1,1 +1,0 @@
-There are Docker registries, containing a storage and distribution for docker images, Docker themselves host a number of these pre-made images. You are also allowed to public your own pre-made containers.

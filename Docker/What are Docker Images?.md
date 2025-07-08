@@ -1,1 +1,0 @@
-Docker allows to package the application with the environment configuration  so that you may deploy or send somewhere it else . This is the docker image , it not only has the source but also complete environment configuration (e.g. JS app, node, npm, Linux) you can also add environment variables, such as creating files or directories.
