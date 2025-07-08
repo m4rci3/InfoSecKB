@@ -1,0 +1,1 @@
+**Commits** are snapshots of the project files at a specific point in time. They record the changes made including adding, modifying, or deleting files. Each commit has a unique identifier and a message explaining what was done, optionally a more detailed explanation of what was done can also be added to that commit. 

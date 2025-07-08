@@ -1,6 +1,6 @@
 ### What is a .git folder?
 
-It stores all the information and metadata about your project’s history, branches , commits, and more. Essentially acting as the brain of your project. it is initialized by `git init` 
+It stores all the information and metadata about your project’s history, branches , commits, and more. It is initialized by the `git init` command. 
 
 This is not all that the *.git* folder has to offer , but if you check the references section below , you can see a more extensive lists and descriptions. 
 
