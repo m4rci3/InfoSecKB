@@ -13,7 +13,7 @@ ssh-keygen -t {encryption, e.g. rsa} -b {bits, e.g.4096} -C {comment, email of g
 Add a passphrase that is easy to remember (but not overly simple) , store this in your favorite password manager
 
   
-This will generate a keypair , one for you to keep (private key) and the other for you to post to your GitHub account (public key)
+This will generate a key-pair , one for you to keep (private key) and the other for you to upload to your GitHub account (public key)
 
 
  
@@ -61,7 +61,7 @@ ssh -T git@github.com
 
   
 
-you will be prompted for the passphrase of your keypair
+You will be prompted for the passphrase of your key-pair
 
   
 
@@ -121,11 +121,11 @@ git clone git@github.com:m4rci3/somethingsomethingrepository
 ```
 
   
-You will need to enter the passphrase for your SSH keypair
+You will need to enter the passphrase for your SSH key-pair
 
   
 
 When you go into the newly cloned git repo , you can see all the files and folder inside of that repo.
 
-To make edits and updates that can be seen on Github, see `Git Commands.md` and other such resources 
+To make edits and updates that can be seen on Github, see `Git Commands.md` and other such resources.
   

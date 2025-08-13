@@ -1,1 +1,1 @@
-**Pull requests** are when _typically_ working with a team and someone has made changes to a [[Branch]] ,but before they can _push_ those changes to main they need to be approved by the rest of the team before we see any actual changes.
+**Pull requests** are when _typically_ working with a team and someone has made changes to a Branch ,but before they can _push_ those changes to the _main_ repository they need to be approved by the rest of the team before we see any actual changes.
